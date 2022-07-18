@@ -1,0 +1,123 @@
+body{
+    background: grey;
+}
+/* budget container */
+.budget-container{
+    background: rgb(35, 26, 165);
+    color: white;
+    width: 360px;
+    display: block;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* app-title */
+.app-title{
+    padding: 5% 5% 0 5%;
+}
+.value{
+    font-size: 2rem;
+    font-weight: 3rem;
+}
+/* budget-header */
+ .budget-header{
+    color: white;
+    padding: 5%;
+}
+.amount{ 
+    padding: 7% ;
+    display: inline-grid;
+    grid-template-columns: 100px 100px 74px;
+
+}
+.chart{ 
+    margin:20% 10%;
+}
+.outcome{ 
+    padding-left: 5%;
+    color: orange;
+}
+ /* budget dashboard  */
+.budget-dashboard{
+    background:white;
+    color: black;
+    width: 360px;
+    border-radius: 30px 30px 0 0;
+    
+}
+/* toggle buttons */
+ .toggle{ 
+    display: inline-grid;
+    grid-template-columns: 80px  80px  30px;
+    padding-left: 30px;
+ }
+
+ /* edit & delete button*/
+#delete {
+    color: red;
+    display: inline;
+}
+#edit{
+    color:slateblue;
+    display: inline;
+}
+.active{
+    color: rgb(35, 26, 165);
+}
+.hide{
+    display: none;
+}
+.image{
+    height: 32px;
+    width: 32px;
+    display: inline;
+}
+.income-total,.outcome-total,.list{
+   font-weight: bold;
+}
+h2{
+    padding-top: 10px;
+    padding-left:30px ;
+}
+.input{
+display: inline-grid;
+grid-template-columns: 165px  165px  0px;
+
+}
+#expense-title-input ,#expense-amount-input, #income-amount-input,#income-title-input{
+     border-width :0px ;
+}
+.expense{
+    color: orange;
+}
+@media( max-width : 400px) {
+    .budget-container{
+        background: rgb(35, 26, 165);
+        color: white;
+        width: 260px;
+        display: block;
+        margin: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .budget-dashboard{
+        background:white;
+        color: black;
+        width: 260px;
+        border-radius: 30px 30px 0 0;
+        
+    }
+    .amount{ 
+        padding: 5% ;
+        display: inline-grid;
+        grid-template-columns: 74px 74px 74px;
+    
+    }
+    .input{
+        display: inline-grid;
+        grid-template-columns: 115px  115px 40px;
+        
+        }
+        #expense-title-input , #expense-amount-input, #income-amount-input,#income-title-input{
+             border-width :0px ;
+        }
+        
+}

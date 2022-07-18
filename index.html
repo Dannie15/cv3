@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon_io/favicon-16x16.png">
+    <title> My-budget-app </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="budget-container">
+        <div class="app-title">Spend<b>wisely</b></div>
+        <div class="budget-header">
+            <div class="balance">
+                <div class="title"><h3>balance</h3></div> <div class="value"></div>
+            </div>
+            <div class="amount grid-container">
+                <div class="income grid-item">
+                    <div class="title"><p><b>income</b></p></div>    <div class="income-total"></div>
+                </div>
+                <div class="chart grid-item"></div>
+                <div class="outcome grid-item">
+                    <div class="title"><p><b> outcome</b></p></div>    <div class="outcome-total"></div>
+                </div>
+            </div>
+        </div>
+        <div class="budget-dashboard">
+            <div class="title"><h2>Dashboard</h2></div>
+            <div class="toggle grid-container">
+                <div class=" grid-item tab2 "> <h4>Expenses</h4></div>
+                <div class=" grid-item tab1 " ><h4>Income</h4></div>
+                <div class=" grid-item tab3 active"><h4>All</h4></div>
+            </div>
+    
+            <div id="income" class="hide">
+                <ul class="list">
+                </ul> 
+                    <div class="input grid-container">
+                        <input type="text" id="income-title-input"  name="Title" placeholder="Title" class="grid-item">
+                        <input type="number" id="income-amount-input"  name="amount" placeholder="$0" class="grid-item">
+                        <div class="add-income grid-item " ><img src="plus.png" alt="" class="image"></div>
+                    </div>
+            </div>
+            <div class="hide" id="expense">
+                <ul class="list"></ul>
+            <div class="input">
+                <input type="text" id="expense-title-input"  name="Title" placeholder="Title">
+                <input type="number" id ="expense-amount-input"  name="amount" placeholder="$0">
+                <div class="add-expense grid-item"><img src="plus.png" alt="" class="image"></div>
+            </div>
+            </div>
+            <div  id="all">
+                <ul class="list"></ul>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
